@@ -31,9 +31,12 @@ public class PlayerMove : NetworkBehaviour {
         {
             return;
         }
+
+
+
         var tmp = cam.transform.position = this.transform.position;
-        tmp.y = this.transform.position.y +5;
-        tmp.z = this.transform.position.z -10;
+        tmp.y = this.transform.position.y +15;
+        tmp.z = this.transform.position.z -12;
         cam.transform.position = tmp;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -42,6 +45,8 @@ public class PlayerMove : NetworkBehaviour {
 
         rb.AddForce(movement * speed);
     }
+
+
 
 
     public override void OnStartLocalPlayer()

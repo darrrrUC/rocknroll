@@ -26,9 +26,11 @@ GameObject:
   - component: {fileID: 54456542660037394}
   - component: {fileID: 114081678792173906}
   - component: {fileID: 114360208477164548}
+  - component: {fileID: 114030389925537872}
+  - component: {fileID: 114804672854193588}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +104,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114030389925537872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817314758428520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b166bd4ee223a46a211ffc1f5cefac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114081678792173906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d1663f618542fa47898cce1c9a2f00f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   playerSkin: {fileID: 2100000, guid: 224de5a1c3ba5f948af30bd7826e4666, type: 2}
 --- !u!114 &114360208477164548
 MonoBehaviour:
@@ -168,6 +181,17 @@ MonoBehaviour:
     i15: 69
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114804672854193588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817314758428520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e841db473f3e95498faaf0e0740ff8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135484125132118810
 SphereCollider:
   m_ObjectHideFlags: 1
